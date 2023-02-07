@@ -1,0 +1,80 @@
+.hoardings{
+    display: flex;
+}
+.hoardings section{
+    margin-left: 200px;
+    height: 400px;
+    width: 612px;
+    animation: 30s slides infinite alternate;
+}
+@keyframes slides{
+    0%{background-image: url(images-1.jpeg);}
+    50%{background-image: url(images-2.jpeg);}
+    100%{background-image: url(images-3.webp);}
+}
+.hoardings aside{
+    text-align: center;
+    margin-left: 30px;
+    width: 480px;
+}
+.hoardings aside p{
+    height: 45px;
+    margin-bottom: -.5em;
+    font-size: 22.5px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.hoardings aside p a{
+    text-decoration: none;
+    color: paleturquoise;
+}
+.hoardings aside p a:hover{
+    color: lime;
+    font-weight: bolder;
+}
+h3{
+    text-align: center;
+}
+.quotes{
+    color: white;
+    text-align: center;
+    font-style: italic;
+    display: flex;
+    background-color: dodgerblue;
+    margin-left: -.5em;
+    margin-right: -.5em;
+}
+.quotes blockquote{
+    border-style: double;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 50px;
+    border-color: white;
+}
+footer{
+    font: 1em Monospace;
+    color: white;
+    text-align: center;
+    background-color: black;
+    height: 3em;
+    margin: -.6em;
+    margin-bottom: -1em;
+}
+/*landscape only*/
+@media only screen and (orientation:portrait){
+  body {  
+    height: 100vw;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+}
+@media only screen and (orientation:landscape){
+  body {  
+     -webkit-transform: rotate(0deg);
+     -moz-transform: rotate(0deg);
+     -o-transform: rotate(0deg);
+     -ms-transform: rotate(0deg);
+     transform: rotate(0deg);
+  }
+}

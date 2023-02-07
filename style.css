@@ -1,0 +1,131 @@
+/*global styles*/
+body{
+    background-image: url(images.jpeg);
+    font-family: 'Trebuchet MS';
+    text-align: center;
+}
+/*about us page*/
+.aboutpage{
+    height: 500px;
+}
+.aboutpage div{
+    color: white;
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+}
+.aboutpage div p{
+    margin-left: 80px;
+    margin-right: 80px;
+}
+.mission{
+    float: left;
+    line-height: 80px;
+    animation: 10s move infinite alternate;
+}
+.vision{
+    float: right;
+    line-height: 40px;
+    animation: 10s move infinite alternate;
+}
+@keyframes move{
+    0%{background-color: red;}
+    50%{background-color: blue;}
+    100%{background-color: green;}
+}
+/*activities page*/
+iframe{
+    width: 750px;
+    height: 422px;
+    border: 0px;
+}
+/*information*/
+embed{
+    width: 100%;
+    height: 100vh;
+}
+/*values and plan table*/
+.valueplan tr td{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.75);
+    border-style: groove;
+    font-style: oblique;
+}
+.valueplan td{
+    line-height: 40px;
+    width: 20%;
+}
+/*gallery page*/
+img{
+    width: 100%;
+}
+/*online learning page*/
+.maintainance{
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    color: white;
+}
+.maintainance h1, h3{
+    color: white;
+}
+.maintainance button{
+    width: 40px;
+    height: 40px;
+    background-image: linear-gradient(to bottom right, cyan, blue );
+}
+.maintainance button:hover{
+    width: 45px;
+    height: 45px;
+    background-image: linear-gradient(to bottom right, lime, red );
+}
+.maintainance .Calculator button{
+    width: 80px;
+}
+/*contacts page*/
+.addresses{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
+.telephone{
+    text-align: center;
+    font-size: large;
+    background-color: fuchsia;
+    width: 50%;
+    border-radius: 50px;
+}
+.telephone ol li{
+    list-style-type: none;
+    margin: 2em;
+}
+.email{
+    margin-left: 50%;
+    text-align: center;
+    font-size: large;
+    background-color: chartreuse;
+    width: 50%;
+    border-radius: 50px;
+}
+.email ol li{
+    list-style-type: none;
+    margin: 2em;
+}
+/*landscape only*/
+@media only screen and (orientation:portrait){
+  body {  
+    height: 100vw;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+}
+@media only screen and (orientation:landscape){
+  body {  
+     -webkit-transform: rotate(0deg);
+     -moz-transform: rotate(0deg);
+     -o-transform: rotate(0deg);
+     -ms-transform: rotate(0deg);
+     transform: rotate(0deg);
+  }
+}
